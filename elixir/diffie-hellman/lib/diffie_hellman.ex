@@ -37,7 +37,7 @@ defmodule DiffieHellman do
   @spec generate_private_key(prime_p :: integer) :: integer
   def generate_private_key(prime_p) do
     Enum.random(1..(prime_p-1))
-  end
+  endm
 
   @doc """
   Given two prime integers as generators (`prime_p` and `prime_g`), and a private key,
